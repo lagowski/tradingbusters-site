@@ -1,0 +1,22 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autorización - Trading Busters</title><meta name="description" content="Página de retorno de la autorización de la app de Trading Busters."><meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.png"><link rel="stylesheet" href="../style.css"></head><body><div class="wrap">
+<header><a class="brand" href="../">Trading Busters</a>
+<nav><a href="../">Inicio</a><a href="../privacy/">Privacidad</a><a href="../terms/">Condiciones</a></nav></header>
+
+<h1>Autorización</h1>
+<p id="msg" class="lead">Leyendo la respuesta de la autorización&hellip;</p>
+<p><textarea id="code" readonly rows="3" hidden></textarea></p>
+<p><button id="copy" hidden>Copiar código</button></p>
+<p>Esta página solo muestra el código de un solo uso que TikTok devuelve después de autorizar la app de Trading Busters.
+No envía nada a ningún sitio. Copia el código en el paso de configuración en pocos minutos: caduca y solo sirve una vez.</p>
+<script>
+const q = new URLSearchParams(location.search), msg = document.getElementById('msg'), box = document.getElementById('code'), btn = document.getElementById('copy');
+if (q.get('error')) { msg.textContent = 'TikTok devolvió un error: ' + q.get('error') + ' ' + (q.get('error_description') || ''); }
+else if (q.get('code')) { msg.textContent = 'Autorizado. State: ' + (q.get('state') || '(ninguno)') + '. Código:'; box.value = q.get('code'); box.hidden = btn.hidden = false;
+  btn.onclick = () => { box.select(); navigator.clipboard ? navigator.clipboard.writeText(box.value) : document.execCommand('copy'); btn.textContent = 'Copiado'; }; }
+else { msg.textContent = 'No hay código de autorización en esta dirección.'; }
+</script>
+
+<footer><a href="../">Inicio</a><a href="../privacy/">Política de privacidad</a><a href="../terms/">Condiciones de uso</a><br>
+&copy; 2026 Trading Busters &middot; Contacto: <a href="mailto:ainews402@gmail.com">ainews402@gmail.com</a></footer></div></body></html>
