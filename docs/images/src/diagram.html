@@ -9,35 +9,46 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .tb{width:48px;height:48px;border-radius:11px;background:#15171C;color:#F1EDE4;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:19px;font-weight:800;line-height:1}
 .tb::after{content:"";width:25px;height:3px;background:#E58A5C;margin-top:5px}
 nav a{color:var(--muted);margin-left:26px;font-size:18px}nav a.on{color:var(--accent)}
-h1{font-size:48px;line-height:1.12;font-weight:800;letter-spacing:-.02em}
-.lead{font-size:23px;color:var(--muted);margin-top:10px;max-width:1240px}
-.flow{display:grid;grid-template-columns:330px 44px 380px 44px 300px 44px 1fr;margin-top:48px;align-items:stretch}
+h1{font-size:46px;line-height:1.12;font-weight:800;letter-spacing:-.02em}
+.lead{font-size:22px;color:var(--muted);margin-top:8px;max-width:1300px}
+.m{font:500 17px "JetBrains Mono",monospace}
+.grid{display:grid;grid-template-columns:400px 1fr;gap:56px;margin-top:38px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
-.card h2{font-size:24px;font-weight:700;margin-bottom:8px}
-.card p{font-size:18px;line-height:1.45;color:var(--muted)}
-.ar{display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:28px;font-weight:600}
-.m{font:500 16px "JetBrains Mono",monospace}
-.ta{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:12px 0 10px;color:var(--fg)}
+.card h2{font-size:24px;font-weight:700;margin-bottom:6px}
+.card p{font-size:17px;line-height:1.45;color:var(--muted)}
+.ta{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:14px 0 14px;color:var(--fg);line-height:1.75}
+.ta i{font-style:normal;color:var(--muted)}
 .btn{display:inline-block;font-size:17px;padding:6px 16px;border-radius:8px;background:var(--accent);color:#fff}
-ul{list-style:none;margin-top:6px}li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:18px}li span{color:var(--accent)}li i{font-style:normal;color:var(--muted);font-size:16px}
-.stack{display:grid;gap:14px}.stack .card{padding:15px 22px}.stack h2{font-size:21px;margin-bottom:3px}.stack p{font-size:16.5px}
+.led{position:relative}
+.led::before{content:"";position:absolute;left:-56px;top:50%;width:56px;border-top:2px solid var(--accent)}
+.led::after{content:"";position:absolute;left:-28px;top:76px;bottom:38px;border-left:2px solid var(--accent)}
+.hd,.row{display:grid;grid-template-columns:330px 330px 1fr;column-gap:22px;align-items:center}
+.hd{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:0 24px 10px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 24px;margin-bottom:12px;position:relative;min-height:92px}
+.row::before{content:"";position:absolute;left:-28px;top:50%;width:28px;border-top:2px solid var(--accent)}
+.row .f{color:var(--fg)}
+.row .u b{display:block;font-size:21px;font-weight:700;line-height:1.2}
+.row .u span{color:var(--accent)}
+.row .r{font-size:16.5px;line-height:1.4;color:var(--muted)}
+.row .r b{color:var(--fg);font-weight:600}
+.zeros{display:flex;gap:34px}.zeros b{color:var(--accent);font-weight:700;margin-right:6px}
 footer{position:absolute;left:64px;right:64px;bottom:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:17px;display:flex;justify-content:space-between}
 </style></head><body>
 <header><div class="brand"><span class="tb">TB</span>Trading Busters</div><nav><a>Inicio</a><a>Privacidad</a><a>Condiciones</a><a class="on">How it works</a></nav></header>
-<h1>One script writes four pages. That is the whole site.</h1>
-<p class="lead">No framework, no dependencies, no build server: the generated files are committed and served as they are.</p>
-<div class="flow">
- <div class="card"><h2>build.py</h2><p>One Python file, standard library only: the shared header and footer, every text, the contact and the date.</p><div class="ta m">$ python3 build.py</div><span class="btn">writes the pages</span></div>
- <div class="ar">&rarr;</div>
- <div class="card"><h2>Four pages, in Spanish</h2><ul><li><span class="m">/</span><i>home</i></li><li><span class="m">/privacy/</span><i>privacy policy</i></li><li><span class="m">/terms/</span><i>terms of use</i></li><li><span class="m">/tiktok-callback/</span><i>one-time code</i></li></ul><p style="margin-top:8px;font-size:16.5px">plus <span class="m" style="color:var(--fg)">style.css</span>, the icon and a verification file</p></div>
- <div class="ar">&rarr;</div>
- <div class="card"><h2>GitHub Pages</h2><p>Serves the files as they are (<span class="m" style="color:var(--fg)">.nojekyll</span>).</p><ul><li><i>cookies</i><span>0</span></li><li><i>analytics, trackers</i><span>0</span></li><li><i>third-party requests</i><span>0</span></li><li><i>secrets in the repo</i><span>0</span></li></ul></div>
- <div class="ar">&rarr;</div>
- <div class="stack">
-  <div class="card"><h2>Visitors</h2><p>read what the channel is and what it never sells</p></div>
-  <div class="card"><h2>App reviews</h2><p>the TikTok, Meta and Google listings of the publisher app link to the privacy and terms pages</p></div>
-  <div class="card"><h2>TikTok checks</h2><p>the URL-prefix verification file, and the callback page that shows the code and sends nothing</p></div>
+<h1>Every page here exists because someone has to read it.</h1>
+<p class="lead">One script writes four Spanish pages; the files are committed and GitHub Pages serves them as they are.</p>
+<div class="grid">
+ <div class="card" style="align-self:start"><h2>build.py</h2><p>One Python file, standard library only. It holds the shared header and footer, every text, the contact and the date.</p>
+  <div class="ta m">$ python3 build.py<br><i>generado: index.html,<br>privacy/, terms/,<br>tiktok-callback/</i></div>
+  <span class="btn">writes the pages</span>
+  <p style="margin-top:14px;font-size:16px">Next to them: <span class="m" style="font-size:15px;color:var(--fg)">style.css</span>, the icon, <span class="m" style="font-size:15px;color:var(--fg)">.nojekyll</span> and TikTok's URL-prefix verification file.</p></div>
+ <div class="led">
+  <div class="hd"><span>build.py writes</span><span>GitHub Pages serves</span><span>Read by</span></div>
+  <div class="row"><span class="f m">index.html</span><div class="u"><span class="m">/</span><b>Inicio</b></div><p class="r"><b>Visitors.</b> What the channel is, what the publisher app does, and that nothing is sold.</p></div>
+  <div class="row"><span class="f m">privacy/index.html</span><div class="u"><span class="m">/privacy/</span><b>Pol&iacute;tica de privacidad</b></div><p class="r"><b>TikTok, Meta and Google app review.</b> Each listing of the publisher app must link to it.</p></div>
+  <div class="row"><span class="f m">terms/index.html</span><div class="u"><span class="m">/terms/</span><b>Condiciones de uso</b></div><p class="r"><b>TikTok app review.</b> Informative videos, no investment advice, nothing for sale.</p></div>
+  <div class="row"><span class="f m">tiktok-callback/index.html</span><div class="u"><span class="m">/tiktok-callback/</span><b>Autorizaci&oacute;n</b></div><p class="r"><b>Whoever authorises the app.</b> TikTok redirects here; the page shows the one-time code and sends nothing.</p></div>
  </div>
 </div>
-<footer><span>&copy; 2026 Trading Busters</span><span>The publisher app itself is not in this repository.</span></footer>
+<footer><span class="zeros"><span><b>0</b>cookies</span><span><b>0</b>analytics, trackers</span><span><b>0</b>third-party requests</span><span><b>0</b>secrets in the repo</span></span><span>The publisher app itself is not in this repository.</span></footer>
 </body></html>

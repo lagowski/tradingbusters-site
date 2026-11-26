@@ -38,7 +38,7 @@ python3 -m http.server 8000       # preview at http://localhost:8000
 
 ## How it works
 
-<p align="center"><img alt="How the site is built and used" src="docs/images/how-it-works.png" width="100%"></p>
+<p align="center"><img alt="build.py writes four pages; each row shows the file, the URL GitHub Pages serves and who has to read it" src="docs/images/how-it-works.png" width="100%"></p>
 
 `build.py` writes the four pages (in Spanish) with one shared header and footer. GitHub Pages serves them as plain
 files, and the TikTok, Meta and Google app listings of Trading Busters Publisher link to the privacy and terms pages.
