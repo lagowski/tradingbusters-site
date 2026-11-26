@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- no font or script is loaded from anywhere: this file is served by GitHub Pages like the rest of the site, which makes no third-party request. The PNG render injects Inter and JetBrains Mono at screenshot time (see brand.json). -->
+<style>
+/* style.css of the site: paper, ink, one rust accent (light is :root, dark is its prefers-color-scheme block) */
+:root{--bg:#15171C;--fg:#F1EDE4;--muted:#A8A295;--accent:#E58A5C;--card:#1D2026;--line:#2C3038;--tile:#0E1013}
+:root.light{--bg:#F4F1EA;--fg:#15171C;--muted:#6E695E;--accent:#B4471F;--card:#FBFAF6;--line:#DCD6C8;--tile:#15171C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1280px;height:640px;background:var(--bg);color:var(--fg);font:17px/1.6 Inter,system-ui,sans-serif;overflow:hidden;padding:36px 56px 0;position:relative}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:23px}
+.tb{width:42px;height:42px;border-radius:10px;background:var(--tile);color:#F1EDE4;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:17px;font-weight:800;line-height:1;border:1px solid var(--line)}
+.tb::after{content:"";width:22px;height:3px;background:#E58A5C;margin-top:4px}
+nav a{color:var(--muted);margin-left:22px;font-size:15.5px}
+h1{font-size:45px;line-height:1.12;font-weight:800;letter-spacing:-.02em;width:880px}
+.lead{font-size:19.5px;color:var(--muted);margin-top:14px;width:900px;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;height:206px;position:relative}
+.path{font:500 13px "JetBrains Mono",monospace;color:var(--accent)}
+.card h2{font-size:20px;font-weight:700;line-height:1.25;margin:6px 0 6px}
+.card p{font-size:14.5px;line-height:1.45;color:var(--muted)}
+.ta{font:500 12.5px "JetBrains Mono",monospace;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 9px;margin-top:10px;color:var(--muted)}
+.btn{display:inline-block;margin-top:9px;font-size:13.5px;padding:4px 13px;border-radius:8px;background:var(--accent);color:#fff;font-weight:500}
+:root:not(.light) .btn{color:#15171C}
+footer{position:absolute;left:56px;right:56px;bottom:26px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between}
+footer span b{color:var(--fg);font-weight:600}
+</style></head><body>
+<header><div class="brand"><span class="tb">TB</span>Trading Busters</div><nav><a>Inicio</a><a>Privacidad</a><a>Condiciones</a></nav></header>
+<h1>Estrategias de trading, puestas a prueba con datos.</h1>
+<p class="lead">The public home and legal pages of Trading Busters and its internal publisher app. Plain HTML and CSS, in Spanish: no cookies, no analytics, no trackers, no third-party requests.</p>
+<div class="cards">
+ <div class="card"><div class="path">/</div><h2>Inicio</h2><p>What Trading Busters is, what the publisher app does and does not do, and where to follow the channel.</p></div>
+ <div class="card"><div class="path">/privacy/</div><h2>Pol&iacute;tica de privacidad</h2><p>The app reads only our own accounts and the statistics of our own videos. Nobody else's data.</p></div>
+ <div class="card"><div class="path">/terms/</div><h2>Condiciones de uso</h2><p>Informative videos, not investment advice. No courses, signals or anything else for sale.</p></div>
+ <div class="card"><div class="path">/tiktok-callback/</div><h2>Autorizaci&oacute;n</h2><p>Shows the one-time code TikTok returns. Sends nothing anywhere.</p><div class="ta">one-time code</div><span class="btn">Copiar c&oacute;digo</span></div>
+</div>
+<footer><span>&copy; 2026 Trading Busters</span><span><b>python3 build.py</b> writes all four pages &middot; served as plain files by GitHub Pages</span></footer>
+<script>if(new URLSearchParams(location.search).get('theme')==='light')document.documentElement.classList.add('light')</script>
+</body></html>

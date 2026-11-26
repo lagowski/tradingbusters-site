@@ -21,7 +21,7 @@ Inicio, política de privacidad y condiciones de uso de Trading Busters y de su 
 - `assets/app-icon-1024.png` es el icono de 1024x1024 de la app (TikTok); es provisional hasta que haya logo de la marca.
 - `tiktok-callback/` solo muestra el código de un solo uso que devuelve TikTok; no envía nada a ningún sitio.
 - En este repo nunca va ningún secreto.
-- La web de estrategias es otra cosa (interna, `strategies.local.pro4.es`, lagowski/trading-studio#16).
+- La web de estrategias es otra cosa (interna, lagowski/trading-studio#16).
 
 ## How to build
 

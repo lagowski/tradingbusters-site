@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- no font or script is loaded from anywhere: this file is served by GitHub Pages like the rest of the site, which makes no third-party request. The PNG render injects Inter and JetBrains Mono at screenshot time (see brand.json). -->
+<style>
+:root{--bg:#F4F1EA;--fg:#15171C;--muted:#6E695E;--accent:#B4471F;--card:#FBFAF6;--line:#DCD6C8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1600px;height:900px;background:var(--bg);color:var(--fg);font:20px/1.5 Inter,system-ui,sans-serif;overflow:hidden;padding:48px 64px 0;position:relative}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.brand{display:flex;align-items:center;gap:14px;font-weight:800;font-size:27px}
+.tb{width:48px;height:48px;border-radius:11px;background:#15171C;color:#F1EDE4;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:19px;font-weight:800;line-height:1}
+.tb::after{content:"";width:25px;height:3px;background:#E58A5C;margin-top:5px}
+nav a{color:var(--muted);margin-left:26px;font-size:18px}nav a.on{color:var(--accent)}
+h1{font-size:48px;line-height:1.12;font-weight:800;letter-spacing:-.02em}
+.lead{font-size:23px;color:var(--muted);margin-top:10px;max-width:1240px}
+.flow{display:grid;grid-template-columns:330px 44px 380px 44px 300px 44px 1fr;margin-top:48px;align-items:stretch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.card h2{font-size:24px;font-weight:700;margin-bottom:8px}
+.card p{font-size:18px;line-height:1.45;color:var(--muted)}
+.ar{display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:28px;font-weight:600}
+.m{font:500 16px "JetBrains Mono",monospace}
+.ta{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:12px 0 10px;color:var(--fg)}
+.btn{display:inline-block;font-size:17px;padding:6px 16px;border-radius:8px;background:var(--accent);color:#fff}
+ul{list-style:none;margin-top:6px}li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:18px}li span{color:var(--accent)}li i{font-style:normal;color:var(--muted);font-size:16px}
+.stack{display:grid;gap:14px}.stack .card{padding:15px 22px}.stack h2{font-size:21px;margin-bottom:3px}.stack p{font-size:16.5px}
+footer{position:absolute;left:64px;right:64px;bottom:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:17px;display:flex;justify-content:space-between}
+</style></head><body>
+<header><div class="brand"><span class="tb">TB</span>Trading Busters</div><nav><a>Inicio</a><a>Privacidad</a><a>Condiciones</a><a class="on">How it works</a></nav></header>
+<h1>One script writes four pages. That is the whole site.</h1>
+<p class="lead">No framework, no dependencies, no build server: the generated files are committed and served as they are.</p>
+<div class="flow">
+ <div class="card"><h2>build.py</h2><p>One Python file, standard library only: the shared header and footer, every text, the contact and the date.</p><div class="ta m">$ python3 build.py</div><span class="btn">writes the pages</span></div>
+ <div class="ar">&rarr;</div>
+ <div class="card"><h2>Four pages, in Spanish</h2><ul><li><span class="m">/</span><i>home</i></li><li><span class="m">/privacy/</span><i>privacy policy</i></li><li><span class="m">/terms/</span><i>terms of use</i></li><li><span class="m">/tiktok-callback/</span><i>one-time code</i></li></ul><p style="margin-top:8px;font-size:16.5px">plus <span class="m" style="color:var(--fg)">style.css</span>, the icon and a verification file</p></div>
+ <div class="ar">&rarr;</div>
+ <div class="card"><h2>GitHub Pages</h2><p>Serves the files as they are (<span class="m" style="color:var(--fg)">.nojekyll</span>).</p><ul><li><i>cookies</i><span>0</span></li><li><i>analytics, trackers</i><span>0</span></li><li><i>third-party requests</i><span>0</span></li><li><i>secrets in the repo</i><span>0</span></li></ul></div>
+ <div class="ar">&rarr;</div>
+ <div class="stack">
+  <div class="card"><h2>Visitors</h2><p>read what the channel is and what it never sells</p></div>
+  <div class="card"><h2>App reviews</h2><p>the TikTok, Meta and Google listings of the publisher app link to the privacy and terms pages</p></div>
+  <div class="card"><h2>TikTok checks</h2><p>the URL-prefix verification file, and the callback page that shows the code and sends nothing</p></div>
+ </div>
+</div>
+<footer><span>&copy; 2026 Trading Busters</span><span>The publisher app itself is not in this repository.</span></footer>
+</body></html>
